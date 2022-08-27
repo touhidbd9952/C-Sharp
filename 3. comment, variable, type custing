@@ -28,6 +28,11 @@
     int[] myNum = {10, 20, 30, 40};
     int a = myNum[0];
     int numberofcar = cars.Length;
+    int[] myNumbers = {5, 1, 8, 9};
+    
+      Console.WriteLine(myNum.Max());  // returns the largest value
+      Console.WriteLine(myNum.Min());  // returns the smallest value
+      Console.WriteLine(myNum.Sum());  // returns the sum of elements
 
     
 //////Explicit Casting///////////////////////////
