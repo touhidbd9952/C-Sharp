@@ -1,0 +1,5 @@
+Math.Max(5, 10) //find the highest value of x and y
+Math.Min(5, 10); //find the lowest value of of x and y
+Math.Sqrt(x) //square root of x
+Math.Abs(-4.7); //absolute (positive) value of x  4.7
+Math.Round(9.99); //10
