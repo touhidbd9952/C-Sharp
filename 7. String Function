@@ -1,0 +1,33 @@
+string greeting = "Hello";
+
+int a = greeting.Length //length count
+txt.ToUpper() // Outputs "HELLO"
+txt.ToLower() // Outputs "hello"
+
+////String Concatenation////////////////////////////////////
+string firstName = "John ";
+string lastName = "Doe";
+string name = firstName + lastName;  
+string name = string.Concat(firstName, lastName); 
+string name = $"My full name is: {firstName} {lastName}"; 
+
+/////Access Strings////////////////////////////////////////
+string myString = "Hello";
+Console.WriteLine(myString[0]);  //H
+
+/////IndexOf()////////////////////////////////////////////
+string myString = "Hello";
+Console.WriteLine(myString.IndexOf("e"));  // Outputs "1"
+
+/////Special character add/////////////
+string txt = "We are the so-called \"Vikings\" from the north.";  //We are the so-called "Vikings" from the north. 
+string txt = "It\'s alright.";                          //It's alright. 
+string txt = "The character \\ is called backslash.";   //The character \ is called backslash. 
+string txt = "The character \\ is called backslash.";   //The character \ is called backslash.
+
+string txt = "Hello\nWorld!";    //Hello
+                                   World! 
+                                
+string txt = "Hello\tWorld!";   //Hello   World! 
+string txt = "Hel\blo World!";  //Helo World!
+                                
