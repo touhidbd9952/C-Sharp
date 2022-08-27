@@ -1,0 +1,19 @@
+////////Take user input/////////////////////
+
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      
+      Console.WriteLine("Enter username:");  // Request to use to give username
+
+      string userName = Console.ReadLine();  //get and put user input in variable
+
+      Console.WriteLine("Username is: " + userName); // Show/print value in console mode
+    }
+  }
+}
