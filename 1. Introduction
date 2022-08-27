@@ -14,3 +14,22 @@ C# is used for:
     VR
     Database applications
     And much, much more!
+
+
+////////// C# Syntax ///////////////////////////////////////////////////////////////////
+1. C# called Program.cs
+2. program.cs is class that first call Main() method
+
+
+using System;  //use library
+
+namespace HelloWorld    //namespace projectname
+{
+  class Program   //class
+  {
+    static void Main(string[] args)  //method
+    {
+      Console.WriteLine("Hello World!");    //statement
+    }
+  }
+}
