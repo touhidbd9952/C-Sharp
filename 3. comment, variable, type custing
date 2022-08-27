@@ -1,0 +1,51 @@
+/////comment//////////////////////////////////////
+    // This is singleline comment
+    /*
+      This is multi line comment
+    */
+
+/////Variable////////////////////////////////////
+    Data Type 	Size 	    Description
+    -------------------------------------------------------------------------------------------------------
+    int 	      4 bytes 	Stores whole numbers from -2,147,483,648 to 2,147,483,647
+    long 	      8 bytes 	Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+    float 	    4 bytes 	Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits
+    double 	    8 bytes 	Stores fractional numbers. Sufficient for storing 15 decimal digits
+    bool 	      1 bit 	  Stores true or false values
+    char 	      2 bytes 	Stores a single character/letter, surrounded by single quotes
+    string 	    2 bytes   per character 	Stores a sequence of characters, surrounded by double quotes
+    
+    
+    int myNum = 5;               // Integer (whole number)
+    long myNum = 15000000000L;
+    double myDoubleNum = 5.99D;  // Floating point number
+    float myNum = 5.75F;
+    char myLetter = 'D';         // Character
+    bool myBool = true;          // Boolean
+    string myText = "Hello";     // String
+    
+//////Explicit Casting///////////////////////////
+    double myDouble = 9.78;
+    int myInt = (int) myDouble;    // Manual casting: double to int
+    
+/////explicit Casting///////////////////////////
+    int myInt = 10;
+    double myDouble = 5.25;
+    bool myBool = true;
+    
+    string myText = Convert.ToString(myInt);
+    double myDoubleNum = Convert.ToDouble(myInt);
+    int myInt = Convert.ToInt32(myDouble);
+    string myText = Convert.ToString(myBool);
+    
+    
+    
+    
+    
+    
+ 
+
+    
+    
+
+
