@@ -1,0 +1,79 @@
+////////if .... else////////////////////////////////////////////
+int time = 22;
+if (time < 10) 
+{
+  Console.WriteLine("Good morning.");
+} 
+else if (time < 20) 
+{
+  Console.WriteLine("Good day.");
+} 
+else 
+{
+  Console.WriteLine("Good evening.");
+}
+
+//////// for loop /////////////////////////////////////////////
+for (int i = 0; i < 5; i++) 
+{
+  Console.WriteLine(i);
+}
+
+//////// foreach loop ////////////////////////////////////////
+string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+foreach (string i in cars) 
+{
+  Console.WriteLine(i);
+}
+
+/////// switch /////////////////////////////////////////////
+int day = 4;
+switch (day) 
+{
+  case 6:
+    Console.WriteLine("Today is Saturday.");
+    break;
+  case 7:
+    Console.WriteLine("Today is Sunday.");
+    break;
+}
+
+
+//default keyword is optional and specifies some code to run if there is no case match
+
+switch (day) 
+{
+  case 6:
+    Console.WriteLine("Today is Saturday.");
+    break;
+  case 7:
+    Console.WriteLine("Today is Sunday.");
+    break;
+  default:
+    Console.WriteLine("Looking forward to the Weekend.");
+    break;
+}
+
+///////C# Break////////////////////////////////////
+"break" used to jump out of loop
+
+for (int i = 0; i < 10; i++) 
+{
+  if (i == 4) 
+  {
+    break;
+  }
+  Console.WriteLine(i);
+}
+
+///////C# Continue////////////////////////////////
+continue used to continue the loop
+
+for (int i = 0; i < 10; i++) 
+{
+  if (i == 4) 
+  {
+    continue;
+  }
+  Console.WriteLine(i);
+}
