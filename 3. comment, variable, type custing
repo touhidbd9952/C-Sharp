@@ -23,6 +23,12 @@
     char myLetter = 'D';         // Character
     bool myBool = true;          // Boolean
     string myText = "Hello";     // String
+    string[] cars;
+    string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    int[] myNum = {10, 20, 30, 40};
+    int a = myNum[0];
+    int numberofcar = cars.Length;
+
     
 //////Explicit Casting///////////////////////////
     double myDouble = 9.78;
