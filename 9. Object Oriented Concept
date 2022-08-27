@@ -1,0 +1,141 @@
+/////Class////////////////////////////////////////////
+A Class is like an object constructor, or a "blueprint" for creating objects.
+Class can have attributes (private variables/properties)and methods
+
+class Calculator 
+{
+  // Class members
+  private int a;        // field/property
+  private int b;          // field
+  private string model; // field
+  private int result;    // field
+  
+  public int addnumber(int num1, int num2)   // method
+  {
+    return result = num1 + num2;
+  }
+  public int addnumber(int num1, int num2 , int num3)   // method overloading
+  {
+    return result = num1 + num2 + num3;
+  }
+  
+  public Calculator() //constructor
+  {
+    color = "red" // Set the initial value for model
+    maxSpeed = 200;
+  }
+  public Calculator(int a1, int b1) //constructor with parameter
+  {
+    this.a = a1 // initialize value
+    this.b = b1;
+  }
+}
+
+//////Object///////////////////////////////////////
+object is created from a class by constructor. 
+
+Car myObj = new Car();
+
+/////Method Overloading/////////////////////////////
+multiple methods can have the same name with different parameters
+
+int MyMethod(int x){}
+float MyMethod(float x){}
+double MyMethod(double x, double y){}
+
+/////Inheritance//////////////////////////////////
+1. In C#, it is possible to inherit fields and methods from one class to another.
+2. Creating a child class (Derived Class) from parent class (Base Class)
+3. To inherit from a class, use the : symbol.
+
+class Vehicle  // base class (parent) 
+{
+  public string brand = "Ford";  // Vehicle field
+  public void honk()             // Vehicle method 
+  {                    
+    Console.WriteLine("Tuut, tuut!");
+  }
+}
+
+class Car : Vehicle  // derived class (child)
+{
+  public string modelName = "Mustang";  // Car field
+}
+class Program
+{
+  static void Main(string[] args)
+  {
+    // Create a myCar object
+    Car myCar = new Car();
+
+    // Call the honk() method (From the Vehicle class) on the myCar object
+    myCar.honk();
+
+    // Display the value of the brand field (from the Vehicle class) and the value of the modelName from the Car class
+    Console.WriteLine(myCar.brand + " " + myCar.modelName);
+  }
+}
+
+//////////////Polymorphism
+1. Polymorphism means "many forms"
+2. Polymorphism occurs when we have many classes that are related to each other by inheritance.
+3. Polymorphism allows us to perform a single action in different ways.
+
+class Animal  // Base class (parent class) 
+{
+  public void animalSound() {Console.WriteLine("The animal makes a sound");}
+}
+
+class Pig : Animal  // Derived class (child class) 
+{
+  public void animalSound() {Console.WriteLine("The pig says: wee wee");}
+}
+
+class Dog : Animal  // Derived class (child class) 
+{
+  public void animalSound() { Console.WriteLine("The dog says: bow wow");}
+}
+
+class Program 
+{
+  static void Main(string[] args) 
+  {
+    Animal myAnimal = new Animal();  // Create a Animal object
+    Animal myPig = new Pig();  // Create a Pig object
+    Animal myDog = new Dog();  // Create a Dog object
+
+    myAnimal.animalSound();
+    myPig.animalSound();
+    myDog.animalSound();
+  }
+}
+
+///////////C# Abstraction//////////////////////////////////////////////////////////////////
+1. Abstraction is a process of hiding certaint
+2. Abstract classes work like interfaces
+3. abstract keyword is used for classes and methods
+
+    Abstract class: 
+        a. restricted class 
+        b. cannot be used to create objects 
+        c. to access abstract class, must be inherited from another class.
+
+    Abstract method: 
+        a. only can use in abstract class.
+        b. abstract method does not have body. 
+        c. body of abstract method is provided by child class (after inherit).
+ 
+    abstract class Animal 
+    {
+        public abstract void animalSound();
+        public void sleep() 
+        {
+          Console.WriteLine("Zzz");
+        }
+    }
+
+
+
+
+
+
