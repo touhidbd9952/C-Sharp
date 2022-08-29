@@ -1,0 +1,16 @@
+An enum (enumerations) is a special "class" that represents a group of constants (unchangeable/read-only variables).
+
+class Program
+{
+  enum Level
+  {
+    Low,
+    Medium,
+    High
+  }
+  static void Main(string[] args)
+  {
+    Level myVar = Level.Medium;
+    Console.WriteLine(myVar);
+  }
+}
