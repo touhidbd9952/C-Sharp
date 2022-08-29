@@ -1,4 +1,5 @@
-/////Class////////////////////////////////////////////
+/////Class/////////////////////////////////////////////////////////////////////////////////////
+
 A Class is like an object constructor, or a "blueprint" for creating objects.
 Class can have attributes (private variables/properties)and methods
 
@@ -31,19 +32,24 @@ class Calculator
   }
 }
 
-//////Object///////////////////////////////////////
+//////Object//////////////////////////////////////////////////////////////////////////////////////////
+
 object is created from a class by constructor. 
 
 Car myObj = new Car();
 
-/////Method Overloading/////////////////////////////
+
+/////Method Overloading///////////////////////////////////////////////////////////////////////////////
+
 multiple methods can have the same name with different parameters
 
 int MyMethod(int x){}
 float MyMethod(float x){}
 double MyMethod(double x, double y){}
 
-/////Inheritance//////////////////////////////////
+
+/////Inheritance///////////////////////////////////////////////////////////////////////////////////////
+
 1. In C#, it is possible to inherit fields and methods from one class to another.
 2. Creating a child class (Derived Class) from parent class (Base Class)
 3. To inherit from a class, use the : symbol.
@@ -76,7 +82,9 @@ class Program
   }
 }
 
-//////////////Polymorphism
+
+//////////////Polymorphism/////////////////////////////////////////////////////////////////////////////
+
 1. Polymorphism means "many forms"
 2. Polymorphism occurs when we have many classes that are related to each other by inheritance.
 3. Polymorphism allows us to perform a single action in different ways.
@@ -110,7 +118,10 @@ class Program
   }
 }
 
-///////////C# Abstraction//////////////////////////////////////////////////////////////////
+
+
+///////////C# Abstraction/////////////////////////////////////////////////////////////////////////
+
 1. Abstraction is a process of hiding certaint
 2. Abstract classes work like interfaces
 3. abstract keyword is used for classes and methods
@@ -124,15 +135,82 @@ class Program
         a. only can use in abstract class.
         b. abstract method does not have body. 
         c. body of abstract method is provided by child class (after inherit).
- 
-    abstract class Animal 
+
+
+
+    // Abstract class (Base/Parent Class)
+    abstract class Animal
     {
-        public abstract void animalSound();
-        public void sleep() 
-        {
-          Console.WriteLine("Zzz");
-        }
+      // Abstract method (does not have a body)
+      public abstract void animalSound();
+      // Regular method
+      public void sleep()
+      {
+        Console.WriteLine("Zzz");
+      }
     }
+
+    // Derived/Child class (inherit from Animal)
+    class Cow : Animal
+    {
+      public override void animalSound()
+      {
+        // The body of animalSound() is provided here
+        Console.WriteLine("The pig says: Hamba Hamba");
+      }
+    }
+
+    class Program
+    {
+      static void Main(string[] args)
+      {
+        Cow myCow = new Cow(); // Create a Pig object
+        myCow.animalSound();  // Call the abstract method
+        myCow.sleep();  // Call the regular method
+      }
+    }
+ 
+ 
+ 
+ ///////////Interfaces///////////////////////////////////////////////////////////////////////////////
+    
+  1. Interface is a completely "abstract class", 
+  2. In Interface we create method without body
+  3. Interface can have abstract methods and properties (with empty bodies)
+  
+  
+        interface IFirstInterface 
+        {
+          void myMethod(); // interface method
+        }
+
+        interface ISecondInterface 
+        {
+          void myOtherMethod(); // interface method
+        }
+
+        // Implement multiple interfaces
+        class DemoClass : IFirstInterface, ISecondInterface 
+        {
+          public void myMethod() 
+          {
+            Console.WriteLine("Some text..");
+          }
+          public void myOtherMethod() 
+          {
+            Console.WriteLine("Some other text...");
+          }
+        }
+
+        class Program 
+        {
+          static void Main(string[] args)
+          {
+            DemoClass myObj = new DemoClass();
+            myObj.myMethod();
+            myObj.myOtherMethod();
+          }
+        }
 
 
 
